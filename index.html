@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tetris</title>
+</head>
+
+<body onload="init()" onkeydown="KeyPressed(event)">
+    <h1 class="title">Tetris</h1>
+    <h3 class="title second">Better clear those lines!</h3>
+    <div class="container">
+        <div class="data">
+            <h1 class="title second timer">time:</h1>
+            <h3 class="title second">Score: <span></span></h3>
+            <div>
+                <button class="button direction" onclick="leftButton()">🢀</button>
+                <button class="button direction" onclick="rightButton()">🢂</button>
+                <div><button class="button direction" onclick="downButton()">🢃</button></div>
+                <div> <button class="button restart" onclick="playAgain()">Play again</button></div>
+            </div>
+            <div class="title second gameOver">Game Over</div>
+        </div>
+        <table>
+            <tbody class="board"></tbody>
+        </table>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
